@@ -1,0 +1,287 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\USER\Desktop\PINS FOLDER FINALLY\my output.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}29 Oct 2023, 15:37:39
+
+{com}. codebook
+
+{txt}{hline}
+{res}county{right:County}
+{txt}{hline}
+
+{col 19}type:  string ({res}str15{txt})
+
+{col 10}unique values:  {res}47{col 51}{txt}missing "":  {res}0{txt}/{res}17,397
+
+{txt}{col 15}examples:  {res}"KAJIADO"
+{col 26}"KWALE"
+{col 26}"MURANG'A"
+{col 26}"SIAYA"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{txt}{hline}
+{res}respondents{right:Respondents}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}1{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}17,397
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}    17,397{col 33}1
+
+{txt}{hline}
+{res}gender{right:Gender}
+{txt}{hline}
+
+{col 19}type:  string ({res}str6{txt})
+
+{col 10}unique values:  {res}2{col 51}{txt}missing "":  {res}0{txt}/{res}17,397
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     7,129{col 33}"Female"
+{col 21}    10,268{col 33}"Male"
+
+{txt}{hline}
+{res}age{right:Age}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}16{txt},{res}116{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}92{col 51}{txt}missing .:  {res}0{txt}/{res}17,397
+
+{txt}{col 19}mean:{res}{col 26} 39.1518
+{txt}{col 15}std. dev:{res}{col 26} 18.0331
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      19{col 37}      25{col 47}      35{col 57}      50{col 67}      67
+
+{txt}{hline}
+{res}maritalstatus{right:Marital status}
+{txt}{hline}
+
+{col 19}type:  string ({res}str27{txt})
+
+{col 10}unique values:  {res}6{col 51}{txt}missing "":  {res}0{txt}/{res}17,397
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     1,202{col 33}"Divorced/Separated"
+{col 21}         8{col 33}"Don't know"
+{col 21}     9,130{col 33}"Married/Living with partner"
+{col 21}        10{col 33}"Refused to answer"
+{col 21}     4,895{col 33}"Single/Never married"
+{col 21}     2,152{col 33}"Widowed"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{txt}{hline}
+{res}crb{right:CRB}
+{txt}{hline}
+
+{col 19}type:  string ({res}str17{txt})
+
+{col 10}unique values:  {res}4{col 51}{txt}missing "":  {res}0{txt}/{res}17,397
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       184{col 33}"Don't know"
+{col 21}    11,238{col 33}"No"
+{col 21}         4{col 33}"Refused to answer"
+{col 21}     5,971{col 33}"Yes"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{txt}{hline}
+{res}gaming{right:Gaming}
+{txt}{hline}
+
+{col 19}type:  string ({res}str17{txt})
+
+{col 10}unique values:  {res}4{col 51}{txt}missing "":  {res}0{txt}/{res}17,397
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     1,093{col 33}"Don't know"
+{col 21}    14,716{col 33}"No"
+{col 21}         8{col 33}"Refused to answer"
+{col 21}     1,580{col 33}"Yes"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{com}. codebook gender
+
+{txt}{hline}
+{res}gender{right:Gender}
+{txt}{hline}
+
+{col 19}type:  string ({res}str6{txt})
+
+{col 10}unique values:  {res}2{col 51}{txt}missing "":  {res}0{txt}/{res}17,397
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     7,129{col 33}"Female"
+{col 21}    10,268{col 33}"Male"
+
+{com}. tabulate gender
+
+     {txt}Gender {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+     Female {c |}{res}      7,129       40.98       40.98
+{txt}       Male {c |}{res}     10,268       59.02      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}     17,397      100.00
+
+{com}. tabulate county gender
+
+                {txt}{c |}        Gender
+         County {c |}    Female       Male {c |}     Total
+{hline 16}{c +}{hline 22}{c +}{hline 10}
+        BARINGO {c |}{res}       170        218 {txt}{c |}{res}       388 
+{txt}          BOMET {c |}{res}       188        244 {txt}{c |}{res}       432 
+{txt}        BUNGOMA {c |}{res}       142        219 {txt}{c |}{res}       361 
+{txt}          BUSIA {c |}{res}       160        197 {txt}{c |}{res}       357 
+{txt}ELGEYO-MARAKWET {c |}{res}       137        219 {txt}{c |}{res}       356 
+{txt}           EMBU {c |}{res}       108        201 {txt}{c |}{res}       309 
+{txt}        GARISSA {c |}{res}       144        219 {txt}{c |}{res}       363 
+{txt}       HOMA BAY {c |}{res}       192        189 {txt}{c |}{res}       381 
+{txt}         ISIOLO {c |}{res}       110        168 {txt}{c |}{res}       278 
+{txt}        KAJIADO {c |}{res}       160        197 {txt}{c |}{res}       357 
+{txt}       KAKAMEGA {c |}{res}       176        290 {txt}{c |}{res}       466 
+{txt}        KERICHO {c |}{res}       158        251 {txt}{c |}{res}       409 
+{txt}         KIAMBU {c |}{res}       169        225 {txt}{c |}{res}       394 
+{txt}         KILIFI {c |}{res}        91        173 {txt}{c |}{res}       264 
+{txt}      KIRINYAGA {c |}{res}       110        166 {txt}{c |}{res}       276 
+{txt}          KISII {c |}{res}       173        255 {txt}{c |}{res}       428 
+{txt}         KISUMU {c |}{res}       165        261 {txt}{c |}{res}       426 
+{txt}          KITUI {c |}{res}       191        230 {txt}{c |}{res}       421 
+{txt}          KWALE {c |}{res}       108        270 {txt}{c |}{res}       378 
+{txt}       LAIKIPIA {c |}{res}        97        132 {txt}{c |}{res}       229 
+{txt}           LAMU {c |}{res}       103        191 {txt}{c |}{res}       294 
+{txt}       MACHAKOS {c |}{res}       216        330 {txt}{c |}{res}       546 
+{txt}        MAKUENI {c |}{res}       155        205 {txt}{c |}{res}       360 
+{txt}        MANDERA {c |}{res}       205        156 {txt}{c |}{res}       361 
+{txt}       MARSABIT {c |}{res}       215        257 {txt}{c |}{res}       472 
+{txt}           MERU {c |}{res}       170        269 {txt}{c |}{res}       439 
+{txt}         MIGORI {c |}{res}       171        244 {txt}{c |}{res}       415 
+{txt}        MOMBASA {c |}{res}        53        209 {txt}{c |}{res}       262 
+{txt}       MURANG'A {c |}{res}       130        185 {txt}{c |}{res}       315 
+{txt}   NAIROBI CITY {c |}{res}       164        309 {txt}{c |}{res}       473 
+{txt}         NAKURU {c |}{res}       288        375 {txt}{c |}{res}       663 
+{txt}          NANDI {c |}{res}       124        232 {txt}{c |}{res}       356 
+{txt}          NAROK {c |}{res}       139        180 {txt}{c |}{res}       319 
+{txt}        NYAMIRA {c |}{res}       158        251 {txt}{c |}{res}       409 
+{txt}      NYANDARUA {c |}{res}       120        197 {txt}{c |}{res}       317 
+{txt}          NYERI {c |}{res}       185        252 {txt}{c |}{res}       437 
+{txt}        SAMBURU {c |}{res}       102         93 {txt}{c |}{res}       195 
+{txt}          SIAYA {c |}{res}       164        178 {txt}{c |}{res}       342 
+{txt}   TAITA-TAVETA {c |}{res}       122        217 {txt}{c |}{res}       339 
+{txt}     TANA RIVER {c |}{res}       163        186 {txt}{c |}{res}       349 
+{txt}  THARAKA-NITHI {c |}{res}       101        203 {txt}{c |}{res}       304 
+{txt}    TRANS NZOIA {c |}{res}       137        169 {txt}{c |}{res}       306 
+{txt}        TURKANA {c |}{res}        96        134 {txt}{c |}{res}       230 
+{txt}    UASIN GISHU {c |}{res}       166        271 {txt}{c |}{res}       437 
+{txt}         VIHIGA {c |}{res}       184        205 {txt}{c |}{res}       389 
+{txt}          WAJIR {c |}{res}       178        211 {txt}{c |}{res}       389 
+{txt}     WEST POKOT {c |}{res}       171        235 {txt}{c |}{res}       406 
+{txt}{hline 16}{c +}{hline 22}{c +}{hline 10}
+          Total {c |}{res}     7,129     10,268 {txt}{c |}{res}    17,397 
+
+
+{com}. tabulate county gender, sort
+{err}option {bf:sort} not allowed
+{txt}{search r(198), local:r(198);}
+
+{com}. tabulate county age, sort
+{err}option {bf:sort} not allowed
+{txt}{search r(198), local:r(198);}
+
+{com}. summarize county age
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}county {c |}{res}          0
+{txt}{space 9}age {c |}{res}     17,397    39.15181    18.03314         16        116
+
+{com}. summarize age
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}age {c |}{res}     17,397    39.15181    18.03314         16        116
+
+{com}. summarize county
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}county {c |}{res}          0
+
+{com}. summarize county crb
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}county {c |}{res}          0
+{txt}{space 9}crb {c |}{res}          0
+
+{com}. summarize
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}county {c |}{res}          0
+{txt}{space 1}respondents {c |}{res}     17,397           1           0          1          1
+{txt}{space 6}gender {c |}{res}          0
+{txt}{space 9}age {c |}{res}     17,397    39.15181    18.03314         16        116
+{txt}maritalsta~s {c |}{res}          0
+{txt}{hline 13}{c +}{hline 57}
+{space 9}crb {c |}{res}          0
+{txt}{space 6}gaming {c |}{res}          0
+
+{com}. sum respondents d
+{err}variable {bf}d{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. sum respondenst, detail
+{err}variable {bf}respondenst{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. 
+. suma respondents, detail
+{err}command {bf}suma{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. sum respondents, detail
+
+                         {txt}Respondents
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        1              1
+{txt} 5%    {res}        1              1
+{txt}10%    {res}        1              1       {txt}Obs         {res}     17,397
+{txt}25%    {res}        1              1       {txt}Sum of Wgt. {res}     17,397
+
+{txt}50%    {res}        1                      {txt}Mean          {res}        1
+                        {txt}Largest       Std. Dev.     {res}        0
+{txt}75%    {res}        1              1
+{txt}90%    {res}        1              1       {txt}Variance      {res}        0
+{txt}95%    {res}        1              1       {txt}Skewness      {res}        .
+{txt}99%    {res}        1              1       {txt}Kurtosis      {res}        .
+
+{com}.  sum age, detail
+
+                             {txt}Age
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}       16             16
+{txt} 5%    {res}       17             16
+{txt}10%    {res}       19             16       {txt}Obs         {res}     17,397
+{txt}25%    {res}       25             16       {txt}Sum of Wgt. {res}     17,397
+
+{txt}50%    {res}       35                      {txt}Mean          {res} 39.15181
+                        {txt}Largest       Std. Dev.     {res} 18.03314
+{txt}75%    {res}       50            110
+{txt}90%    {res}       67            111       {txt}Variance      {res} 325.1942
+{txt}95%    {res}       74            113       {txt}Skewness      {res} .8378862
+{txt}99%    {res}       86            116       {txt}Kurtosis      {res} 2.940199
+
+{com}. exit, clear

@@ -1,0 +1,159 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\USER\Desktop\PINS FOLDER FINALLY\jjjjj.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}31 Oct 2023, 16:01:21
+
+{com}. logit var8 age
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-5187.7234}  
+Iteration 1:{space 3}log likelihood = {res:-5040.8911}  
+Iteration 2:{space 3}log likelihood = {res:-5034.4001}  
+Iteration 3:{space 3}log likelihood = {res:-5034.3809}  
+Iteration 4:{space 3}log likelihood = {res:-5034.3809}  
+{res}
+{txt}Logistic regression{col 49}Number of obs{col 67}= {res}    16,296
+{txt}{col 49}LR chi2({res}1{txt}){col 67}= {res}    306.69
+{txt}{col 49}Prob > chi2{col 67}= {res}    0.0000
+{txt}Log likelihood = {res}-5034.3809{txt}{col 49}Pseudo R2{col 67}= {res}    0.0296
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        var8{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}age {c |}{col 14}{res}{space 2}-.0302755{col 26}{space 2} .0018881{col 37}{space 1}  -16.03{col 46}{space 3}0.000{col 54}{space 4}-.0339762{col 67}{space 3}-.0265748
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-1.161795{col 26}{space 2} .0666414{col 37}{space 1}  -17.43{col 46}{space 3}0.000{col 54}{space 4}-1.292409{col 67}{space 3} -1.03118
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. br
+
+. codebook
+
+{txt}{hline}
+{res}county{right:County}
+{txt}{hline}
+
+{col 19}type:  string ({res}str15{txt})
+
+{col 10}unique values:  {res}47{col 51}{txt}missing "":  {res}0{txt}/{res}16,296
+
+{txt}{col 15}examples:  {res}"KAJIADO"
+{col 26}"KWALE"
+{col 26}"MURANG'A"
+{col 26}"SAMBURU"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{txt}{hline}
+{res}respondents{right:Respondents}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}1{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1{col 51}{txt}missing .:  {res}0{txt}/{res}16,296
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}    16,296{col 33}1
+
+{txt}{hline}
+{res}gender{right:Gender}
+{txt}{hline}
+
+{col 19}type:  string ({res}str6{txt})
+
+{col 10}unique values:  {res}2{col 51}{txt}missing "":  {res}0{txt}/{res}16,296
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     6,636{col 33}"Female"
+{col 21}     9,660{col 33}"Male"
+
+{txt}{hline}
+{res}age{right:Age}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}16{txt},{res}111{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}88{col 51}{txt}missing .:  {res}0{txt}/{res}16,296
+
+{txt}{col 19}mean:{res}{col 26} 38.7667
+{txt}{col 15}std. dev:{res}{col 26} 17.7441
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      19{col 37}      25{col 47}      35{col 57}      50{col 67}      66
+
+{txt}{hline}
+{res}maritalstatus{right:Marital status}
+{txt}{hline}
+
+{col 19}type:  string ({res}str27{txt})
+
+{col 10}unique values:  {res}6{col 51}{txt}missing "":  {res}0{txt}/{res}16,296
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}     1,135{col 33}"Divorced/Separated"
+{col 21}         8{col 33}"Don't know"
+{col 21}     8,559{col 33}"Married/Living with partner"
+{col 21}        10{col 33}"Refused to answer"
+{col 21}     4,664{col 33}"Single/Never married"
+{col 21}     1,920{col 33}"Widowed"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{txt}{hline}
+{res}crb{right:CRB}
+{txt}{hline}
+
+{col 19}type:  string ({res}str17{txt})
+
+{col 10}unique values:  {res}4{col 51}{txt}missing "":  {res}0{txt}/{res}16,296
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       130{col 33}"Don't know"
+{col 21}    10,466{col 33}"No"
+{col 21}         3{col 33}"Refused to answer"
+{col 21}     5,697{col 33}"Yes"
+
+{txt}{col 16}warning:  variable has embedded blanks
+
+{txt}{hline}
+{res}gaming{right:Gaming}
+{txt}{hline}
+
+{col 19}type:  string ({res}str3{txt})
+
+{col 10}unique values:  {res}2{col 51}{txt}missing "":  {res}0{txt}/{res}16,296
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}    14,716{col 33}"No"
+{col 21}     1,580{col 33}"Yes"
+
+{txt}{hline}
+{res}var8{right:Gaming}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}16,296
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}    14,716{col 33}0
+{col 21}     1,580{col 33}1
+
+{com}. sum county age
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}county {c |}{res}          0
+{txt}{space 9}age {c |}{res}     16,296    38.76669    17.74413         16        111
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\USER\Desktop\PINS FOLDER FINALLY\jjjjj.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}31 Oct 2023, 16:03:37
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

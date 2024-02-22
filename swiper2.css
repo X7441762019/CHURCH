@@ -1,0 +1,139 @@
+section{
+    position: relative;
+    height: 100%;
+    top: 10px;
+    
+
+    
+
+}
+
+section{
+    background:#fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    background: rgb(12, 12, 12);
+    margin-bottom: 10.5px;
+    
+    overflow: hidden;
+    width: 100%;
+    
+
+    
+    
+  
+ ;
+    
+    
+  
+  }
+
+  section h12{
+    color: whitesmoke;
+    filter: brightness(140%);
+    font-family:fantasy;
+    font-size: 35px;
+    padding-left: 10px;
+    
+  }
+  
+  .swiper {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 250px;
+    overflow: hidden;
+    margin-bottom: -50px;
+    
+    
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    -webkit-box-reflect: below 130px linear-gradient(transparent,transparent,#0006);
+  
+   
+
+   
+    
+    
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    filter: brightness(120%);
+    
+  }
+
+  .swiper-slide .imgBx{
+    width: 100%;
+    
+  
+  }
+
+  .swiper-slide .imgBx img{
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 800px){
+    section h12{
+    font-size: 24px;
+    
+    }
+  }
+
+  
+  @media only screen and (max-width: 452px){
+    .swiper-slide .imgBx img{
+
+    }
+
+    section h12{
+   display: none;
+
+      
+    }
+
+  
+  }
+
+  .swiper-pagination{
+    top: 490px;
+  }
+
+  h94{
+    color: white;
+    background-color: brown;
+    
+    width: 140%;
+   
+    position:relative;
+    font-family: 'oswald';
+    font-size: 20px;
+    
+    
+  }
+
+  
+
+
+
+   
+  
+
+
+
+
+
+
+
+  

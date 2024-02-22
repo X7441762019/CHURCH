@@ -1,0 +1,298 @@
+#section90 {
+    font-family: Anton;
+    background:linear-gradient(to right, rgb(2, 198, 183), rgb(2, 198, 183));
+    
+    
+    }
+    
+    .player{
+      height: 95vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background: #0f3b41;
+      font-family:Anton;
+     
+  }
+    .rapper{
+      border: 1px solid transparent;
+      padding: 30px;
+      border-radius: 5px;
+      background: url(Pins/Vintage-wallpaper-2.jpg);
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      margin-top: 0;
+
+      
+      
+      
+      
+      
+   
+
+    }
+    
+    .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    .track-art {
+    margin: 25px;
+    height: 150px;
+    width: 150px;
+    border:2px solid 	#FFFAFA;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 6px 5px black;
+    -webkit-box-shadow: 0px 6px 5px black;
+    box-shadow: 0px 6px 5px black;
+    -moz-border-radius:190px;
+    -webkit-border-radius:190px;
+    border-radius:190px;
+
+    }
+    
+    .now-playing {
+    font-size: 1rem;
+    color: #FFFAFA;
+    }
+    
+    .track-name {
+    font-size: 2.5rem;
+    color: #FFFAFA;
+    }
+    
+    .track-artist {
+    margin-top: 5px;
+    font-size: 1.15rem;
+    color: #FFFAFA;
+    
+    }
+    
+    .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 36%;
+    padding-right:36%;
+    width:10%;
+    
+    
+    }
+    .active{
+        color: black;
+    }
+    
+    .repeat-track,
+    .random-track,
+    .playpause-track,
+    .prev-track,
+    .next-track {
+    padding: 15px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    color: #FFFAFA;
+    
+
+    }
+    
+    .repeat-track:hover,
+    .random-track:hover,
+    .playpause-track:hover,
+    .prev-track:hover,
+    .next-track:hover {
+    opacity: 1.0;
+    
+    }
+    
+    .slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 0.5px;
+    background:rgb(243, 236, 195);
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    opacity: 0.6;
+    
+    }
+    
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 7.5px;
+    background: gold;
+    border: 3px solid gold;
+    cursor: grab;
+    border-radius: 100%;
+    }
+    
+    .seek_slider:hover,
+    .volume_slider:hover {
+    opacity: 1.0;
+    }
+    
+    .seek_slider {
+    width: 60%;
+    }
+    
+    .volume_slider {
+    width: 30%;
+    }
+    
+    .current-time,
+    .total-duration {
+    padding: 10px;
+    color: #FFFAFA;
+    }
+    
+    i.fa-volume-down,
+    i.fa-volume-up {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    }
+    
+    i,
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward,
+    p {
+    cursor: pointer;
+    }
+    .randomActive{
+        color: black;
+    }
+    .rotate {
+        animation: rotation 8s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+    }
+    .loader {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader .stroke{
+        background: #f1f1f1;
+        height: 150%;
+        width: 10px;
+        border-radius: 50px;
+        margin: 0 5px;
+        animation: animate 1.4s linear infinite;
+    }
+      @keyframes animate {
+        50% {
+          height: 20%;
+          background: gold;
+        }
+    
+        100% {
+          background: gold;
+          height: 100%;
+        }
+      }
+      .stroke:nth-child(1){
+          animation-delay: 0s;
+      }
+      .stroke:nth-child(2){
+        animation-delay: 0.3s;
+    }
+    .stroke:nth-child(3){
+        animation-delay: 0.6s;
+    }
+    .stroke:nth-child(4){
+        animation-delay: 0.9s;
+    }
+    .stroke:nth-child(5){
+        animation-delay: 0.6s;
+    }
+    .stroke:nth-child(6){
+        animation-delay: 0.3s;
+    }
+    .stroke:nth-child(7){
+        animation-delay: 0s;
+    }
+    
+
+    @media only screen and (max-width: 900px){
+    .track-art{
+      width:0px;
+      height: 0px;
+      opacity: 0;
+    }
+
+ 
+    }
+
+    @media only screen and (max-width: 500px){
+    .buttons{
+      padding-left: 0;
+    }
+  
+   
+      }
+
+      @media only screen and (min-width: 400px){
+        .buttons{
+        
+
+#player{
+  background: url(pins/IMG20221209180206.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="VINTAGE.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="VINTAGE.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <div class="header">
+            
+        <div class="container">
+       
+        <div class="navbar">
+    
+            <div class="logo">
+                <img src="images/sda white.png" width="100px" filter="brighness:(150%)">
+            </div>
+        
+    
+            <nav>
+                <ul id="menuitems">
+    
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="Untitled-3.html">About</a></li>
+                <li><a href="map.html">Contact</a></li>
+                <li><a href="">Account</a></li>
+    
+                
+    
+                </ul>
+            </nav>
+    
+            <div class="menu" id="menu" onclick="menutoggle()">
+              <div>
+               <span class="line-1"></span>
+               <span class="line-2"></span>
+               <span class="line-3"></span>
+              </div>
+        
+              </div>
+        </div>
+        </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    <section90>
+   <div class="player">
+       <div class="rapper">
+           <div class="details">
+               <div class="now-playing">PLAYING x OF y</div>
+              <div class="track-art"></div>
+              <marquee>
+               <div class="track-name">Track Name</div>
+               </marquee>
+               <div class="track-artist">Track Artist</div>
+               
+           </div>
+
+           <div class="slider_container">
+               <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+           </div>
+
+           <div class="slider_container">
+               <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+           </div>
+
+           <div class="buttons">
+               <div class="random-track" onclick="randomTrack()">
+                   <i class="fas fa-random fa-2x" title="random"></i>
+               </div>
+               <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-4x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="repeat-track" onclick="repeatTrack()">
+                    <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                </div>
+
+                <div class="logo"></div>
+           </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>  
+       </div>
+   </div>
+    </section90>
+
+
+   <!------footer------->
+   <div class="footer">
+
+    <div class="container">
+
+      <div class="row">
+<div class="footer-col-1">
+
+<h3>Download Our App</h3>
+<p>Download Our App for Android and ios mobile phone</p>
+</div>
+
+<div class="footer-col-2">
+
+
+<p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to many</p>
+</div>
+
+<div class="footer-col-3">
+
+<h3>Useful Links</h3>
+
+  <ul>
+
+  <li>Coupons</li>
+  <li>Blog Post</li>
+  <li>Return Policy</li>
+  <li>Join Affiliate</li>
+  
+  </ul>
+</div>
+
+<div class="footer-col-4">
+
+<h3>Follow Us</h3>
+
+  <ul>
+
+  <li>Facebook</li>
+  <li>Twitter</li>
+  <li>Instagram</li>
+  <li>Youtube</li>
+  
+  </ul>
+</div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2022 - Michael On The Web </p>
+    </hr>
+    </div>
+  </div>
+
+
+<!----menu script------>
+
+<script>
+    var menu = document.getElementById("menu");
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight ="0px";
+
+    menu.onclick = function(){
+     menu.classList.toggle ("openmenu");
+
+if(menuitems.style.maxHeight =="0px")
+      {
+        menuitems.style.maxHeight ="200px";
+      }
+
+      else {
+        menuitems.style.maxHeight ="0px";
+      }
+    }
+
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <title>MODERN YOUTH </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="vintage.css">
+   
+  
+    <link rel="stylesheet" type="text/css" href="swiper.min.css">
+    <link rel="stylesheet" href="swiper3.css">
+    <title>Music Player</title>
+  
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/3a4b3bd112.js" crossorigin="anonymous"></script>
+
+  
+
+    </head>
+
+    <body>
+    
+        <div class="header">
+ 
+            <div class="container">
+           
+            <div class="navbar">
+        
+           
+            
+        
+                <nav id="nav" class="nerv">
+                  <ul id="menuitems">
+        
+                    <li><a href="index3.html">HOME</a></li>
+                    <li><a href="Untitled-3.html">ABOUT</a></li>
+                    <li><a href="map.html">CONTACT</a></li>
+                   
+                    
+                    <div class="logo">
+                      <h80>I Will go with my Church</h80>
+                      <img src="Pins/feet.png" width="60%">MSC
+                   </div>
+                    </ul>
+                 
+                  
+                </nav>
+              
+                <div class="menu" id="menu" onclick="menutoggle()">
+                  <div>
+                   <span class="line-1"></span>
+                   <span class="line-2"></span>
+                   <span class="line-3"></span>
+                  </div>
+            
+                  </div>
+            </div>
+        
+        </div>
+        </div>
+
+ 
+        <div class="every">
+            <div class="whole"> 
+                <img src="Pins/colored.png" width="40%">
+                <div class="sentence">
+                  <div class="done">
+                    <h79>
+                      Vintage
+                    </h79>
+                  </div>
+                    
+                    <p>
+                    In this section, have a chance to relive
+                    some of our oldest old school albums.
+                   
+                    
+                    </p>
+                
+
+                </div>
+                
+            </div> 
+            <a href="VINTAGE.html" class="bttn">Explore</a>
+            </div> 
+
+<!-- Swiper -->
+<section>
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+   <div class="parallax-bg" style="
+         background-image: url(pins/IMG20221209180206.jpg);
+        
+       " data-swiper-parallax="-23%"></div>
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <div class="title" data-swiper-parallax="-300">Why Do We<br> SING?</div>
+       <div class="subtitle" data-swiper-parallax="-200"></div>
+       <div class="text" data-swiper-parallax="-100">
+
+
+
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="title" data-swiper-parallax="-300"> Praise</div>
+       <div class="subtitle" data-swiper-parallax="-200">Judges 5:3</div>
+       <div class="text" data-swiper-parallax="-100">
+         <p>
+           Here O ye Kings, I even will sing unto the LORD; I will sin gpraise to the Lord 
+           God of Israel.
+ 
+         </p>
+         </p>
+   
+    
+         
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="title" data-swiper-parallax="-300"> LIVE THE <br> SONG!!!</div>
+       <div class="subtitle" data-swiper-parallax="-200">Preaching through song</div>
+       <div class="text" data-swiper-parallax="-100">
+         <p>
+Music is a great way of winning many souls to Christ.
+
+ 
+ 
+       </div>
+     </div>
+   </div>
+
+   <div class="swiper-pagination"></div>
+ </div>
+ 
+ 
+ </section>
+ <div class="many">
+  <img src="pins/clay.png" width="100%">
+ </div>
+ 
+
+
+    
+    <div class="done">
+  
+        <h79> Youth Music</h79>
+        
+        </div>
+        <div class="blue">
+<div class="card">
+
+ <img src="pins/done.jpg" width="100%">
+<div class="advert">
+  Kando Ya Mito Album launch
+</div>
+   
+</div>
+
+
+
+
+<!------youth playlist------->
+<div class="player">
+  <div class="rapper">
+      <div class="details">
+          <div class="now-playing">PLAYING x OF y</div>
+         <div class="track-art"></div>
+         
+          <div class="track-name">Track Name</div>
+          
+          <div class="track-artist">Track Artist</div>
+          
+      </div>
+
+      <div class="slider_container">
+          <div class="current-time">00:00</div>
+           <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+           <div class="total-duration">00:00</div>
+      </div>
+
+      <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+           <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+           <i class="fa fa-volume-up"></i>
+      </div>
+
+      <div class="buttons">
+          <div class="random-track" onclick="randomTrack()">
+              <i class="fas fa-random fa-2x" title="random"></i>
+          </div>
+          <div class="prev-track" onclick="prevTrack()">
+               <i class="fa fa-step-backward fa-2x"></i>
+           </div>
+           <div class="playpause-track" onclick="playpauseTrack()">
+               <i class="fa fa-play-circle fa-3x"></i>
+           </div>
+           <div class="next-track" onclick="nextTrack()">
+               <i class="fa fa-step-forward fa-2x"></i>
+           </div>
+           <div class="repeat-track" onclick="repeatTrack()">
+               <i class="fa fa-repeat fa-2x" title="repeat"></i>
+           </div>
+
+           <div class="logo"></div>
+      </div>
+
+       <div id="wave">
+           <span class="stroke"></span>
+           <span class="stroke"></span>
+           <span class="stroke"></span>
+           <span class="stroke"></span>
+           <span class="stroke"></span>
+           <span class="stroke"></span>
+           <span class="stroke"></span>
+       </div>
+       <div class="transform">
+        <marquee>
+          <i class="fa-sharp fa-solid fa-star fa-2x"></i><i class="fa-sharp fa-solid fa-star fa-2x"></i> <h93>Kando Ya Mito Album</h93> <i class="fa-sharp fa-solid fa-star fa-2x"></i> <i class="fa-sharp fa-solid fa-star fa-2x"></i>
+       </marquee>
+       </div>
+  </div>
+</div>
+
+
+
+ </div>
+<!------footer------->
+
+<div class="footer">
+
+  <div class="container">
+
+    <div class="rowe">
+<div class="footer-col-1">
+
+<h3>Download Recent lesson Study Guides</h3>
+<p>Download Lessons for both Adults & Children<br>on our site</p>
+</div>
+
+<div class="footer-col-2">
+
+
+<p>Transforming Lives</p>
+</div>
+
+
+
+
+    </div>
+    <hr>
+    <p class="copyright">Copyright 2022 - Modern Sda Church Lanet</p>
+  </hr>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----mysong script----->
+
+<script>
+
+    var mysong = document.getElementById("mysong");
+    var icon = document.getElementById("icon")
+
+    icon.onclick = function(){
+       if(mysong.paused){
+        mysong.play();
+        icon.src = "pins/kindpng_1177320.png";
+        
+
+       }  else{
+        mysong.pause();
+        icon.src = "pins/kindpng_42488 - Copy.png";
+       }
+
+       if(mysong.play){
+        mysong1.pause();icon1.src = "pins/play1.png";
+        mysong2.pause();icon1.src = "pins/play2.png";
+        mysong3.pause();icon1.src = "pins/play3.png";
+        mysong4.pause();icon1.src = "pins/play4.png";
+        mysong5.pause();icon1.src = "pins/play5.png";
+        mysong6.pause();icon1.src = "pins/play6.png";
+        
+       
+    
+       } 
+ 
+    }
+
+    var mysong1 = document.getElementById("mysong1");
+    var icon1 = document.getElementById("icon1")
+
+    icon1.onclick = function(){
+       if(mysong1.paused){
+        mysong1.play();
+        icon1.src = "pins/pause1.png";
+
+       } else{
+        mysong1.pause();
+        icon1.src = "pins/play1.png";
+       }
+
+       if(mysong1.play){
+        mysong.pause();icon.src = "pins/kindpng_42488 - Copy.png";
+        mysong2.pause();icon2.src = "pins/play2.png";
+        mysong3.pause();icon3.src = "pins/play3.png";
+        mysong4.pause();icon4.src = "pins/play4.png";
+        mysong5.pause();icon5.src = "pins/play5.png";
+        mysong6.pause();icon6.src = "pins/play6.png";
+       
+    
+       } 
+
+
+
+    }
+
+
+    var mysong2 = document.getElementById("mysong2");
+    var icon2 = document.getElementById("icon2")
+
+    icon2.onclick = function(){
+       if(mysong2.paused){
+        mysong2.play();
+        icon2.src = "pins/pause2.png";
+
+       } else{
+        mysong2.pause();
+        icon2.src = "pins/play2.png";
+       }
+
+       if(mysong2.play){
+        mysong.pause();icon.src = "pins/kindpng_42488 - Copy.png";
+        mysong1.pause();icon1.src = "pins/play1.png";
+        mysong3.pause();icon3.src = "pins/play3.png";
+        mysong4.pause();icon4.src = "pins/play4.png";
+        mysong5.pause();icon5.src = "pins/play5.png";
+        mysong6.pause();icon6.src = "pins/play6.png";
+       
+    
+       } 
+    }
+
+
+    var mysong3 = document.getElementById("mysong3");
+    var icon3 = document.getElementById("icon3")
+
+    icon3.onclick = function(){
+       if(mysong3.paused){
+        mysong3.play();
+        icon3.src = "pins/pause3.png";
+
+       } else{
+        mysong3.pause();
+        icon3.src = "pins/play3.png";
+       }
+
+       if(mysong3.play){
+        mysong.pause();icon.src = "pins/kindpng_42488 - Copy.png"
+        mysong1.pause();icon1.src = "pins/play1.png";
+        mysong2.pause();icon2.src = "pins/play2.png";
+        mysong4.pause();icon4.src = "pins/play4.png";
+        mysong5.pause();icon5.src = "pins/play5.png";
+        mysong6.pause();icon6.src = "pins/play6.png";
+       
+    
+       } 
+    }
+
+    var mysong4 = document.getElementById("mysong4");
+    var icon4 = document.getElementById("icon4")
+
+    icon4.onclick = function(){
+       if(mysong4.paused){
+        mysong4.play();
+        icon4.src = "pins/pause4.png";
+
+       } else{
+        mysong4.pause();
+        icon4.src = "pins/play4.png";
+       }
+
+       if(mysong4.play){
+        mysong.pause();icon.src = "pins/kindpng_42488 - Copy.png";
+        mysong1.pause();icon1.src = "pins/play1.png";
+        mysong2.pause();icon2.src = "pins/play2.png";
+        mysong3.pause();icon3.src = "pins/play3.png";
+        mysong5.pause();icon5.src = "pins/play5.png";
+        mysong6.pause();icon6.src = "pins/play6.png";
+       
+    
+       } 
+    }
+
+    var mysong5 = document.getElementById("mysong5");
+    var icon5 = document.getElementById("icon5")
+
+    icon5.onclick = function(){
+       if(mysong5.paused){
+        mysong5.play();
+        icon5.src = "pins/pause5.png";
+
+       } else{
+        mysong5.pause();
+        icon5.src = "pins/play5.png";
+       }
+
+       if(mysong5.play){
+        mysong.pause();icon.src = "pins/kindpng_42488 - Copy.png";
+        mysong1.pause();icon1.src = "pins/play1.png";
+        mysong2.pause();icon2.src = "pins/play2.png";
+        mysong3.pause();icon3.src = "pins/play3.png";
+        mysong4.pause();icon4.src = "pins/play4.png";
+        mysong6.pause();icon6.src = "pins/play6.png";
+       
+    
+       } 
+    }
+
+
+    var mysong6 = document.getElementById("mysong6");
+    var icon6 = document.getElementById("icon6")
+
+    icon6.onclick = function(){
+       if(mysong6.paused){
+        mysong6.play();
+        icon6.src = "pins/pause6.png";
+
+       } else{
+        mysong6.pause();
+        icon6.src = "pins/play6.png";
+       }
+
+       if(mysong6.play){
+        mysong.pause();"pins/kindpng_42488 - Copy.png";
+        mysong1.pause();icon1.src = "pins/play1.png";
+        mysong2.pause();icon2.src = "pins/play2.png";
+        mysong3.pause();icon3.src = "pins/play3.png";
+        mysong4.pause();icon4.src = "pins/play4.png";
+        mysong5.pause();icon5.src = "pins/play5.png";
+       
+    
+       } 
+    }
+
+
+
+
+</script>
+
+
+      <!----menu script------>
+
+ <script>
+  var cole = document.getElementById("nav");
+  var menu = document.getElementById("menu");
+  var menuitems = document.getElementById("menuitems");
+  menuitems.style.maxHeight ="0px";
+
+  menu.onclick = function(){
+   menu.classList.toggle ("openmenu");
+
+
+if(menuitems.style.maxHeight =="0px")
+    {
+      menuitems.style.maxHeight ="100%";
+      nav.style.width="50%";
+      nav.style.opacity="1"
+    }
+
+    else {
+      menuitems.style.maxHeight ="0px";
+      nav.style.width="0px";
+    }
+  }
+
+   </script>
+
+
+
+<!-- Swiper JS -->
+<script type="text/javascript" src="swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    speed: 2600,
+    parallax: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    loop: true,
+          autoplay: {
+            delay : 4700,
+            disableOnInteraction: false,
+          }
+  });
+</script>
+
+
+
+
+   
+
+
+
+
+
+</body>
+    </html>
+
+
+   
+   
